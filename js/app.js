@@ -59,17 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
         newsletterSubmit.disabled = true;
     });
 
-    document.getElementById('clear-storage').addEventListener('click', function () {
-        // Clear all stored data
-        localStorage.clear();
-
-        // Provide feedback to the user
-        alert('All local data has been cleared.');
-
-        // Reload the page or reset the application state
-        location.reload();
-    });
-
     const thanksDialog = document.getElementById('thank-you-dialog');
     const closeDialogBtn = document.getElementById('close-dialog-btn');
     const thanksCloseBtn = thanksDialog.querySelector('.close-btn');
