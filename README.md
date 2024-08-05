@@ -39,7 +39,7 @@ The footer is divided into three columns:
 
 ### Instructions for Accessing the Hosted Project
 
-Visit the Hosted Project:
+Visit the Hosted Project: https://niamhfoley-dev.github.io/assignment_2/
 
 
 
