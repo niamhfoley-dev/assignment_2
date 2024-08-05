@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productivity App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
+
+    <link rel="icon" href="/notepad.png" sizes="any">
+    <link rel="apple-touch-icon" href="notepad.png">
+
+    <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="brand">
+            <a href="#hero" class="nav-brand">ProductivityApp</a>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#todo" class="nav-link">To-Do List</a></li>
+            <li><a href="#footer" class="nav-link">Contact</a></li>
+            <li><button id="clear-storage" class="clear-button">Clear Data</button></li>
+        </ul>
+
+        <button class="navbar-toggle" id="navbar-toggle">☰</button>
+    </div>
+</nav>
+
+
+<header id="hero">
+    <h1>Stay Organized, Stay Productive</h1>
+    <p>Your go-to app for managing daily tasks with ease.</p>
+    <a href="#todo" class="cta-button">Get Started</a>
+</header>
+
+<section id="about">
+    <div class="content">
+        <h2>About Our App</h2>
+        <p>Our app is designed to help you streamline your tasks and boost your productivity.</p>
+
+        <div class="benefits">
+            <div class="benefit-item">
+                <img src="img/easy.png" alt="Simple to Use Icon" class="benefit-icon">
+                <h3>Simple to Use</h3>
+                <p>Our intuitive interface allows you to add, manage, and complete tasks with ease, minimizing distractions and maximizing
+                    efficiency.</p>
+            </div>
+            <div class="benefit-item">
+                <img src="img/task.png" alt="Simple to Use Icon" class="benefit-icon">
+                <h3>Organized Workflow</h3>
+                <p>Effortlessly categorize your tasks, set priorities, and sort your to-do list to keep your workflow smooth and
+                    organized.</p>
+            </div>
+            <div class="benefit-item">
+                <img src="img/goal.png" alt="Simple to Use Icon" class="benefit-icon">
+                <h3>Stay on Top of Goals</h3>
+                <p>Receive timely reminders and track your progress to ensure you meet your deadlines and achieve your objectives.</p>
+            </div>
+            <div class="benefit-item">
+                <img src="img/dependable.png" alt="Simple to Use Icon" class="benefit-icon">
+                <h3>Secure and Reliable</h3>
+                <p>Your tasks are securely stored, so your to-do list is always available, giving you peace of mind that nothing will be
+                    lost.</p>
+            </div>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="img/about.webp" alt="Productivity Image">
+    </div>
+</section>
+
+<section id="todo">
+    <h2>Your To-Do List</h2>
+    <div class="todo-container">
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="Enter your task here..." required>
+            <button type="submit" class="add-button">Add Task</button>
+        </form>
+        <ul id="task-list">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+    </div>
+</section>
+
+<!-- Newsletter Modal using <dialog> -->
+<dialog id="newsletter-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-body">
+            <h2 id="modal-header">Join Our Newsletter</h2>
+            <p id="modal-p">Stay updated with the latest news and exclusive content. Subscribe to our newsletter!</p>
+            <form id="newsletter-form">
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+                <button id="newsletter-submit" type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</dialog>
+
+<!-- Newsletter Thank You Modal -->
+<dialog id="thank-you-dialog">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Thank You!</h2>
+        <p>Thanks for signing up for our newsletter. We're excited to keep you updated!</p>
+        <button id="close-dialog-btn" class="close-modal-btn">Close</button>
+    </div>
+</dialog>
+
+<footer id="footer">
+    <div class="footer-container">
+        <!-- First Column: Flaticon Attribution Links -->
+        <div class="footer-column">
+            <h3>Icons Credits</h3>
+            <ul>
+                <li><a href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/easy" title="easy icons">Easy icons by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/planning" title="planning icons">Planning icons by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/goal" title="goal icons">Goal icons by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/reliability" title="reliability icons">Reliability icons by Uniconlabs - Flaticon</a></li>
+            </ul>
+        </div>
+
+        <!-- Second Column: Social Media Links -->
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!-- Third Column: Newsletter Signup Form -->
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <form id="newsletter-signup">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 ProductivityApp. All rights reserved.</p>
+    </div>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/todo.js"></script>
+</body>
+</html>
